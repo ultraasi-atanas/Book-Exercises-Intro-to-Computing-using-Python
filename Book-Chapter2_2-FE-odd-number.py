@@ -17,7 +17,6 @@ z = 1
 
 # if none of them are odd - go straight to else
 if (x % 2 != 0) or (y % 2 != 0) or (z % 2 != 0):
-    
     #codeblock if we have some odd numbers
     print("ok")
     
@@ -28,11 +27,10 @@ if (x % 2 != 0) or (y % 2 != 0) or (z % 2 != 0):
         largest = y
     elif (z % 2 != 0):
         largest = z
-        
-        
+
     # here we check each against the largest
     # no need to check for x as we did already
-        
+
     if (y % 2 != 0):
         if y > largest:
             largest = y
