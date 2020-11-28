@@ -16,7 +16,7 @@ low = 0.0
 high = max(1.0, x)
 ans = (high + low)/2.0
 while abs(ans**2 - x) >= epsilon:
-    count +=1
+    count += 1
     if ans**2 < x:
         low = ans
     else:
