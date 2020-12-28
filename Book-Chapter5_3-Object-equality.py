@@ -15,11 +15,33 @@ Ivys = ['Harvard','Brown','Yale']
 Univs = [Ivys, Techs]
 Univs_1 = [['Harvard','Brown','Yale'],['MIT','Caltech']]
 
-idUnivs = id(Univs)
-idUnivs_1 = id(Univs_1)
 
+print('Techs contains', Techs)
+print('Ivys contains', Ivys)
+print('Univs contains', Univs)
+print('Univs_1 contains', Univs_1)
+    
+print()
 
-print(Univs == Univs_1) # True - Test value equality
-print(idUnivs == idUnivs_1) # False - Test object equality
-print('Id of Univs =', idUnivs)
-print('Id of Univs_1 = ', idUnivs_1)
+print(Univs == Univs_1, ' Test value equality') # True 
+print(id(Univs) == id(Univs_1), ' Test object equality') # False
+print('Id of Univs =', id(Univs))
+print('Id of Univs_1 = ', id(Univs_1))
+
+print()
+
+newTechs = Techs
+print('newTechs = Techs')
+print(newTechs == Techs, ' Test value equality') # True
+print(id(newTechs) == id(Techs), ' Test object equality') # True
+print('Id of newTechs =', id(newTechs))
+print('Id of Techs = ', id(Techs))
+
+print()
+newTechs = list(Techs)  # clone using list()
+print('newTechs = list(Techs)')
+print(newTechs == Techs, ' Test value equality') # True
+print(id(newTechs) == id(Techs), ' Test object equality') # False
+
+print('Id of newTechs =', id(newTechs))
+print('Id of Techs = ', id(Techs))
