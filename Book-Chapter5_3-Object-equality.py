@@ -19,29 +19,25 @@ Univs_1 = [['Harvard','Brown','Yale'],['MIT','Caltech']]
 print('Techs contains', Techs)
 print('Ivys contains', Ivys)
 print('Univs contains', Univs)
-print('Univs_1 contains', Univs_1)
+print('Univs_1 contains', Univs_1, '\n','\n')
     
-print()
 
 print(Univs == Univs_1, ' Test value equality') # True 
 print(id(Univs) == id(Univs_1), ' Test object equality') # False
 print('Id of Univs =', id(Univs))
-print('Id of Univs_1 = ', id(Univs_1))
+print('Id of Univs_1 = ', id(Univs_1), '\n','\n')
 
-print()
 
 newTechs = Techs
 print('newTechs = Techs')
 print(newTechs == Techs, ' Test value equality') # True
 print(id(newTechs) == id(Techs), ' Test object equality') # True
 print('Id of newTechs =', id(newTechs))
-print('Id of Techs = ', id(Techs))
+print('Id of Techs = ', id(Techs), '\n','\n')
 
-print()
 newTechs = list(Techs)  # clone using list()
 print('newTechs = list(Techs)')
 print(newTechs == Techs, ' Test value equality') # True
 print(id(newTechs) == id(Techs), ' Test object equality') # False
-
 print('Id of newTechs =', id(newTechs))
 print('Id of Techs = ', id(Techs))
