@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Dec 28 20:57 2020
+Created on Tue Dec 29 10:38 2020
 Introduction to Computation and Programming Using Python. John V. Guttag, 2016, 2nd ed
 Book Chapter 5 Structured types, mutability and higher-order functions
 
