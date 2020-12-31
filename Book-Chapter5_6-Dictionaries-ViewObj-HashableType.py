@@ -35,6 +35,30 @@ for e in months:
 # An object of type <class 'dict_keys'> can be converted to a list
 print(list(months),'\n')    
 
+# We can also get out the Values
+valuesView = months.values()
+print(type(valuesView),'\n') # <class 'dict_values'>
+for v in valuesView:
+    print(type(v), '\n')
+
+# We want to get out all the keys that have a certain value
+
+students = { "Ana":"A", "John":"C", "Mike": "A", "Greg": "B", "Serena":"C" }
+keyResults = []
+searchValue = "A"
+for d in students:
+    if students[d] == "A":
+        keyResults.append(d)
+        
+print(keyResults,'\n')
+    
+# Tuples as keys, a timetable for a small airport with three fights a week, implemented with tuples as keys
+flights = {('FA1234','Mon'):'12:30', ('EZ1676','Tue'): '09:45', ('ZZ9881','Wed') : '08:34'}
+
+print(flights.keys(),'\n')
+
+
+
 # Hashable types
 # __hash__ method
 # __eq__ method
@@ -47,9 +71,4 @@ print(list(months),'\n')
 # It's like keys in a database table, you can have multiple keys, here represented by
 # a tuple, to uniquely identify a row in the database table
 # =============================================================================
-
-# A timetable for a small airport with three fights a week, implemented with tuples as keys
-flights = {('FA1234','Mon'):'12:30', ('EZ1676','Tue'): '09:45', ('ZZ9881','Wed') : '08:34'}
-
-print(flights.keys(),'\n')
 
