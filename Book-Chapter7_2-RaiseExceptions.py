@@ -29,7 +29,8 @@ def findAnEven(L):
 #     raise ValueError("L does not contain an even number")
 #    
 # =============================================================================
-# Internal exception handling but we assume that's not needed, it will be handled
+
+# Internal exception handling but we could assume that's not needed, it will be handled
 # at the level of which the function is being called
     try:
         for elem in L:
