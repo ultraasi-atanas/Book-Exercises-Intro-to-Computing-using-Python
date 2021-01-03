@@ -20,23 +20,23 @@ def findAnEven(L):
     '''Assumes L is a list of integers
         Returns the first even number in L
         Raises ValueError if L does not contain an even number'''
-    
-    for elem in L:
-        if elem%2 == 0:
-            return elem
-        
-    raise ValueError("L does not contain an even number")
-   
 # =============================================================================
-# # Internal exception handling but we assume that's not needed, it will be handled
-# # at the level of which the function is being called
-#     try:
-#         for elem in L:
-#             if elem%2 == 0:
-#                 return elem
-#         raise ValueError("L does not contain an even number")
-#     except:
-#         print("Now")
+#     
+#     for elem in L:
+#         if elem%2 == 0:
+#             return elem
+#         
+#     raise ValueError("L does not contain an even number")
+#    
 # =============================================================================
+# Internal exception handling but we assume that's not needed, it will be handled
+# at the level of which the function is being called
+    try:
+        for elem in L:
+            if elem%2 == 0:
+                return elem
+        raise ValueError("L does not contain an even number")
+    except ValueError as myerror:
+        print("See this: ", myerror)
 
 print(findAnEven([1,3,5]))
