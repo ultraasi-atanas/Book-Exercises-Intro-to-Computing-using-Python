@@ -62,6 +62,16 @@ def lyrics_to_frequencies(l):
 
 
 def mostCommon(d):
+    """
+    Parameters
+    ----------
+    d : dict
+        words and frequencies value pairs
+
+    Returns
+    -------
+    a tuple containing the highest frequency and the respective word(s) list
+    """
     mostCommonValue = max(d.values())
     results = []
     for e in d:
